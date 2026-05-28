@@ -39,19 +39,17 @@ revealSection();
 
 // Hamburger
 
-const hamburger = document.getElementById("hamburger");
-const navLinks = document.getElementById("navLinks");
+const hamburger = document.querySelector(".hamburger");
+const navLinks = document.querySelector(".nav-links");
 
 hamburger.addEventListener("click", () => {
   navLinks.classList.toggle("active");
 });
 
-// Close Menu On Link Click
+/* Close menu when clicking outside */
 
-const navItems = document.querySelectorAll(".nav-links a");
-
-navItems.forEach((link) => {
-  link.addEventListener("click", () => {
+document.addEventListener("click", (e) => {
+  if (!navLinks.contains(e.target) && !hamburger.contains(e.target)) {
     navLinks.classList.remove("active");
-  });
+  }
 });

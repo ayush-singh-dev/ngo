@@ -827,3 +827,49 @@ footer {
 }
 
 /* Responsive */
+/* Hero Responsive */
+
+@media (max-width: 768px) {
+
+  .hero-text h1 {
+
+    font-size: 2.3rem;
+
+    line-height: 1.3;
+  }
+
+  .hero-text p {
+
+    font-size: 1rem;
+
+    line-height: 1.7;
+
+    padding: 0 10px;
+  }
+
+  .hero-buttons {
+
+    flex-direction: column;
+
+    align-items: center;
+  }
+
+  .primary-btn,
+  .secondary-btn {
+
+    width: 220px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .hero-text h1 {
+
+    font-size: 1.9rem;
+  }
+
+  .hero-text p {
+
+    font-size: 0.95rem;
+  }
+}
